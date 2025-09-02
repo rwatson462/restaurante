@@ -1,0 +1,17 @@
+{
+  "name": "back-office",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/back-office",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project back-office --web",
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/back-office",
+        "command": "next dev -p 3002"
+      }
+    }
+  }
+}
