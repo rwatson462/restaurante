@@ -15,7 +15,7 @@ body {
 
 .app-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #000000 0%, #991b1b 100%);
+  background: var(--brand-gradient, linear-gradient(135deg, #000000 0%, #991b1b 100%));
   color: white;
   display: flex;
   flex-direction: column;
