@@ -1,5 +1,5 @@
 import './global.css';
-import { BrandHead, getBrandColors } from '@restaurante/shared';
+import { BrandHead, getBrandColors, AppContainer } from '@restaurante/shared';
 
 export const metadata = {
   title: 'Reservations - Restaurante',
@@ -17,9 +17,9 @@ export default function RootLayout({
     <html lang="en">
       <BrandHead colors={brandColors} />
       <body>
-        <div className="app-container">
+        <AppContainer>
           {children}
-        </div>
+        </AppContainer>
       </body>
     </html>
   );

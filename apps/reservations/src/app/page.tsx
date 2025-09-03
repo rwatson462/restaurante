@@ -1,7 +1,5 @@
+import { PageHeader } from '@restaurante/shared';
+
 export default function Page() {
-  return (
-    <div className="page-header">
-      <h1 className="page-title">Reservations</h1>
-    </div>
-  );
+  return <PageHeader title="Reservations" />;
 }
