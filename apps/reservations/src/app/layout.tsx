@@ -1,6 +1,7 @@
 import './global.css';
 import { BrandHead, getBrandColors } from '@restaurante/shared';
 import { AppContainer } from '@restaurante/ui-components';
+import { Footer } from '../components/Footer';
 
 export const metadata = {
   title: 'Reservations - Restaurante',
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body>
         <AppContainer>
           {children}
+          <Footer />
         </AppContainer>
       </body>
     </html>

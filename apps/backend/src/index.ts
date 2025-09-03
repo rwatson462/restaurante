@@ -12,6 +12,14 @@ app.get('/', (c) => {
   return c.json({ message: "ok" })
 })
 
+app.get('/health', (c) => {
+  return c.json({
+    status: 'healthy',
+    timestamp: new Date().toISOString(),
+    service: 'restaurante-backend'
+  })
+})
+
 const port = parseInt(process.env.PORT)
 console.log(`Server is running on port ${port}`)
 
