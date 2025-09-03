@@ -1,8 +1,8 @@
-import { checkBackendHealth } from '@restaurante/api';
+import { checkBackendHealth, HealthResponse } from '@restaurante/api';
 import styles from './Footer.module.css';
 
 export async function Footer() {
-  const health = await checkBackendHealth();
+  const health: HealthResponse = await checkBackendHealth();
   const isHealthy = health.status === 'healthy';
   const statusDotClass = isHealthy ? styles.statusDotConnected : styles.statusDotDisconnected;
 

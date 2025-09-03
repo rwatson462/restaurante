@@ -1,6 +1,8 @@
-const API_URL = process.env.BACKEND_URL || 'http://localhost:4000';
+import { HealthResponse } from './responses';
 
-export async function checkBackendHealth() {
+const API_URL = process.env['BACKEND_URL'];
+
+export async function checkBackendHealth(): Promise<HealthResponse> {
   const response = await fetch(`${API_URL}/health`);
   if (!response.ok) {
     throw new Error('Backend health check failed');

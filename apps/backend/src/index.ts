@@ -1,6 +1,7 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { PrismaClient } from './generated/prisma'
+import { HealthResponse } from '@restaurante/api'
 import dotenv from 'dotenv'
 
 dotenv.config()
@@ -13,11 +14,12 @@ app.get('/', (c) => {
 })
 
 app.get('/health', (c) => {
-  return c.json({
+  const healthResponse: HealthResponse = {
     status: 'healthy',
     timestamp: new Date().toISOString(),
     service: 'restaurante-backend'
-  })
+  };
+  return c.json(healthResponse);
 })
 
 const port = parseInt(process.env.PORT)

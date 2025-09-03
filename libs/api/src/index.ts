@@ -1,2 +1,2 @@
-export * from './lib/api';
 export * from './health';
+export * from './responses';
