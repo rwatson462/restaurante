@@ -1,9 +1,11 @@
-import { checkBackendHealth, HealthResponse } from '@restaurante/api';
 import styles from './Footer.module.css';
 
-export async function Footer() {
-  const health: HealthResponse = await checkBackendHealth();
-  const isHealthy = health.status === 'healthy';
+interface FooterProps {
+  healthStatus: string;
+}
+
+export function Footer({ healthStatus }: FooterProps) {
+  const isHealthy = healthStatus === 'healthy';
   const statusDotClass = isHealthy ? styles.statusDotConnected : styles.statusDotDisconnected;
 
   return (
@@ -13,7 +15,7 @@ export async function Footer() {
           <span className={styles.statusLabel}>Backend Status:</span>
           <div className={styles.statusIndicator}>
             <div className={`${styles.statusDot} ${statusDotClass}`} />
-            <span className={styles.statusText}>{health.status}</span>
+            <span className={styles.statusText}>{healthStatus}</span>
           </div>
         </div>
       </div>
