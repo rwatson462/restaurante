@@ -1,5 +1,6 @@
 import './global.css';
-import { BrandHead, getBrandColors, AppContainer } from '@restaurante/shared';
+import { BrandHead, getBrandColors } from '@restaurante/shared';
+import { AppContainer } from '@restaurante/ui-components';
 
 export const metadata = {
   title: 'Back Office - Restaurante',
