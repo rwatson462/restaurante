@@ -7,7 +7,8 @@
     "dev:front": "npx nx dev front-of-house",
     "dev:back": "npx nx dev back-office",
     "dev:kitchen": "npx nx dev kitchen",
-    "dev:reservations": "npx nx dev reservations"
+    "dev:reservations": "npx nx dev reservations",
+    "dev:backend": "npx nx dev backend"
   },
   "private": true,
   "devDependencies": {
