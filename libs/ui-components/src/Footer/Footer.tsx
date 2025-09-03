@@ -1,4 +1,4 @@
-import { checkBackendHealth } from '../services/api';
+import { checkBackendHealth } from '@restaurante/api';
 import styles from './Footer.module.css';
 
 export async function Footer() {

@@ -10,7 +10,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "apps/kitchen",
-        "command": "next dev -p 3003"
+        "command": "next dev -p 3003 --turbopack"
       }
     }
   }

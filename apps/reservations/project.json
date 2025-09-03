@@ -10,7 +10,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "apps/reservations",
-        "command": "next dev -p 3004"
+        "command": "next dev -p 3004 --turbopack"
       }
     }
   }

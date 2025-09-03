@@ -27,6 +27,3 @@ export async function makeRequest<T = any>(
   return response.json();
 }
 
-export async function getServerStatus(): Promise<any> {
-  return makeRequest('/');
-}

@@ -1,7 +1,6 @@
 import './global.css';
 import { BrandHead, getBrandColors } from '@restaurante/shared';
-import { AppContainer } from '@restaurante/ui-components';
-import { Footer } from '../components/Footer';
+import { AppContainer, Footer } from '@restaurante/ui-components';
 
 export const metadata = {
   title: 'Reservations - Restaurante',

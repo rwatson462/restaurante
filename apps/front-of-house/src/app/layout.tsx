@@ -1,6 +1,6 @@
 import './global.css';
 import { BrandHead, getBrandColors } from '@restaurante/shared';
-import { AppContainer } from '@restaurante/ui-components';
+import { AppContainer, Footer } from '@restaurante/ui-components';
 
 export const metadata = {
   title: 'Front of House - Restaurante',
@@ -20,6 +20,7 @@ export default function RootLayout({
       <body>
         <AppContainer>
           {children}
+          <Footer />
         </AppContainer>
       </body>
     </html>

@@ -10,7 +10,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "apps/back-office",
-        "command": "next dev -p 3002"
+        "command": "next dev -p 3002 --turbopack"
       }
     }
   }
