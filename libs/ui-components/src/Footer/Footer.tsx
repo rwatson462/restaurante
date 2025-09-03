@@ -1,7 +1,7 @@
 import styles from './Footer.module.css';
 
 interface FooterProps {
-  healthStatus: string;
+  healthStatus: 'healthy';
 }
 
 export function Footer({ healthStatus }: FooterProps) {

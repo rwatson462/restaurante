@@ -1,5 +1,5 @@
 export interface HealthResponse {
-  status: string;
+  status: 'healthy';
   timestamp: string;
-  service: string;
+  service: 'restaurante-backend';
 }
