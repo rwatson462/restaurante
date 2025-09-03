@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@restaurante/api": ["libs/api/src/index.ts"],
       "@restaurante/shared": ["libs/shared/src/index.ts"],
       "@restaurante/ui-components": ["libs/ui-components/src/index.ts"]
     }
